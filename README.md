@@ -332,23 +332,22 @@ API Cho Đặt vé . Thanh Toán , Bình Luận ( có thể mở rộng thêm ph
 | 13  | Người dùng | TC_USER_013  | Thay đổi mật khẩu                           | 1. Nhấn nút thay đổi mật khẩu<br>2. Nhập mật khẩu cũ<br>3. Nhập mật khẩu mới                  | Mật khẩu cũ: 123456<br>Mật khẩu mới: 1234567                                            | Thay đổi mật khẩu thành công                                    | Thay đổi mật khẩu thành công                                 | Pass       |
 | 14  | Người dùng | TC_USER_014  | Thay đổi mật khẩu với mật khẩu cũ sai       | 1. Nhấn nút thay đổi mật khẩu<br>2. Nhập mật khẩu cũ sai<br>3. Nhập mật khẩu mới              | Mật khẩu cũ: 12345<br>Mật khẩu mới: 1234567                                             | Yêu cầu nhập lại                                                | Yêu cầu nhập lại                                             | Pass       |
 | 15  | Người dùng | TC_USER_015  | Thay đổi mật khẩu với mật khẩu mới giống cũ | 1. Nhấn nút thay đổi mật khẩu<br>2. Nhập lại mật khẩu cũ<br>3. Nhập lại mật khẩu mới giống cũ | Mật khẩu cũ: 123456<br>Mật khẩu mới: 123456                                             | Yêu cầu nhập mật khẩu mới mạnh hơn khác mật khẩu cũ             | Yêu cầu nhập mật khẩu mới mạnh hơn khác mật khẩu cũ          | Pass       |
+| 16  | Người dùng | TC_USER_016  | Cập nhật thông tin người dùng | 1. . Đăng nhập<br>2. Thông tin tài khoản<br>3. Thay đổi thông tin | Giới tính: Nam<br>Giới tính mới: Nữ                                            | Cập nhật thành công            | Cập nhật thành công          | Pass       |  
+
 
 ## Module. Test Case Cho Chọn film , chọn Lịch Chiếu , Suất Chiếu
 
 | STT | Module    | Mã Test Case | Mô Tả                                           | Bước Thực Hiện                                                                                   | Dữ Liệu Đầu Vào        | Kết Quả Mong Đợi                                                     | Kết Quả Thực Tế                                            | Trạng Thái |
 | --- | --------- | ------------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
-| 16  | Chọn phim | TC_FILM_001  | Chọn phim muốn xem                              | 1. Nhấn vào mục "Phim đang chiếu"<br>2. Nhấn "Đặt vé"<br>3. Chọn lịch chiếu<br>4. Chọn giờ chiếu | Phim: Doraemon         | Hiển thị lịch chiếu và khung giờ chiếu                               | Hiển thị lịch chiếu và khung giờ chiếu                     | Pass       |
-| 17  | Chọn phim | TC_FILM_002  | Chọn lịch chiếu & suất chiếu khi chưa đăng nhập | 1. Nhấn vào giờ chiếu của phim bất kỳ (khi chưa đăng nhập)                                       | Khung giờ chiếu bất kỳ | Hệ thống yêu cầu người dùng đăng nhập<br>Quay về màn hình trang chủ  | Hệ thống yêu cầu đăng nhập<br>Chuyển về màn hình trang chủ | Pass       |
-| 18  | Đặt vé    | TC_FILM_003  | Hiển thị danh sách ghế                          | 1. Chọn suất chiếu bất kỳ đã đăng nhập                                                           | Suất chiếu đã chọn     | Hiển thị danh sách ghế: gồm ghế trống, ghế đã bán, ghế đang được đặt | Hiển thị danh sách ghế đầy đủ trạng thái                   | Pass       |
+| 1  | Chọn phim | TC_FILM_001  | Chọn phim muốn xem                              | 1. Nhấn vào mục "Phim đang chiếu"<br>2. Nhấn "Đặt vé"<br>3. Chọn lịch chiếu<br>4. Chọn giờ chiếu | Phim: Doraemon         | Hiển thị lịch chiếu và khung giờ chiếu                               | Hiển thị lịch chiếu và khung giờ chiếu                     | Pass       |
+| 2  | Chọn phim | TC_FILM_002  | Chọn lịch chiếu & suất chiếu khi chưa đăng nhập | 1. Nhấn vào giờ chiếu của phim bất kỳ (khi chưa đăng nhập)                                       | Khung giờ chiếu bất kỳ | Hệ thống yêu cầu người dùng đăng nhập<br>Quay về màn hình trang chủ  | Hệ thống yêu cầu đăng nhập<br>Chuyển về màn hình trang chủ | Pass       |
+| 3  | Đặt vé    | TC_FILM_003  | Hiển thị danh sách ghế                          | 1. Chọn suất chiếu bất kỳ đã đăng nhập                                                           | Suất chiếu đã chọn     | Hiển thị danh sách ghế: gồm ghế trống, ghế đã bán, ghế đang được đặt | Hiển thị danh sách ghế đầy đủ trạng thái                   | Pass       |
+| 4  | Xem Phim đang chiếu    | TC_FILM_004  | Xem phim đang chiếu                          | 1. Nhấn vào “đang chiếu”                                                           | Không có     | Danh sách phim sắp chiếu | Danh sách phim sắp chiếu                  | Pass       |
+| 5  | Xem phim sắp chiếu    | TC_FILM_005  | Xem danh sách phim sắp chiếu                          | 1. Nhấn vào “sắp chiếu”                                                           | Không có     | Danh sách phim đang chiếu | Danh sách phim đang chiếu                  | Pass   
+| 6  | Xem chi tiết phim    | TC_FILM_006  | Xem chi tiết phim                          | 1. Nhấn vào phim muốn xem                                                          | Không có     | Chi tiết thông tin phim | Chi tiết thông tin phim                 | Pass     
+
 
 3. Test Case cho đặt ghế và xem lịch
-
-##  Module: Chọn phim
-
-| STT | Mã Test Case | Mô Tả                              | Bước Thực Hiện                                                                                   | Dữ Liệu Đầu Vào  | Kết Quả Mong Đợi                       | Kết Quả Thực Tế                        | Trạng Thái |
-| --- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------- | -------------------------------------- | -------------------------------------- | ---------- |
-| 1   | TC_FILM_001  | Chọn phim muốn xem                 | 1. Nhấn vào mục "Phim đang chiếu"<br>2. Nhấn "Đặt vé"<br>3. Chọn lịch chiếu<br>4. Chọn giờ chiếu | Phim: Doraemon   | Hiển thị lịch chiếu và khung giờ chiếu | Hiển thị lịch chiếu và khung giờ chiếu | Pass       |
-| 2   | TC_FILM_002  | Chọn suất chiếu khi chưa đăng nhập | 1. Nhấn vào giờ chiếu của phim bất kỳ (khi chưa đăng nhập)                                       | Giờ chiếu bất kỳ | Yêu cầu đăng nhập                      | Yêu cầu đăng nhập                      | Pass       |
 
 ##  Module: Đặt ghế
 
@@ -363,9 +362,9 @@ API Cho Đặt vé . Thanh Toán , Bình Luận ( có thể mở rộng thêm ph
 
 | STT | Mã Test Case | Mô Tả                         | Bước Thực Hiện                                  | Dữ Liệu Đầu Vào  | Kết Quả Mong Đợi                         | Kết Quả Thực Tế                          | Trạng Thái |
 | --- | ------------ | ----------------------------- | ----------------------------------------------- | ---------------- | ---------------------------------------- | ---------------------------------------- | ---------- |
-| 7   | TC_FILM_007  | Lịch sử vé đã đặt             | 1. Đăng nhập<br>2. Nhấn vào mục "Lịch sử vé"    | Tài khoản hợp lệ | Hiển thị các vé đã đặt                   | Hiển thị các vé đã đặt                   | Pass       |
-| 8   | TC_User      | Lịch sử vé khi chưa đăng nhập | 1. Nhấn vào mục "Lịch sử vé" khi chưa đăng nhập | Không đăng nhập  | Yêu cầu đăng nhập                        | Yêu cầu đăng nhập                        | Pass       |
-| 9   | TC_FILM_008  | Chi tiết vé                   | 1. Nhấn vào vé đã mua trong danh sách lịch sử   | Vé đã mua        | Hiển thị thông tin vé chi tiết + mã vạch | Hiển thị thông tin vé chi tiết + mã vạch | Pass       |
+| 1   | TC_TICKET_001  | Lịch sử vé đã đặt             | 1. Đăng nhập<br>2. Nhấn vào mục "Lịch sử vé"    | Tài khoản hợp lệ | Hiển thị các vé đã đặt                   | Hiển thị các vé đã đặt                   | Pass       |
+| 2   | TC_TICKET_002      | Lịch sử vé khi chưa đăng nhập | 1. Nhấn vào mục "Lịch sử vé" khi chưa đăng nhập | Không đăng nhập  | Yêu cầu đăng nhập                        | Yêu cầu đăng nhập                        | Pass       |
+| 3   | TC_TICKET_003  | Chi tiết vé                   | 1. Nhấn vào vé đã mua trong danh sách lịch sử   | Vé đã mua        | Hiển thị thông tin vé chi tiết + mã vạch | Hiển thị thông tin vé chi tiết + mã vạch | Pass       |
 
 ##  VI. Cách Chạy Dự Án
 
